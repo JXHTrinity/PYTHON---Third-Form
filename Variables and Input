@@ -22,3 +22,22 @@ name = input("Enter your name: ")
 age= int(input("Enter your age: "))
 print("Hello " ,  name , " You are, " , age)
 #The code above asks for the users name and age, then states "Hello, [name], you are, [age]"
+
+name = input("Enter your name: ")
+colour= input("Enter your favourite colour: ")
+print("Hello " ,  name , " Your favourite colour is, " , colour)
+#In line 1, the name of the variable is	name
+#In line 1 the name of the function is	input
+#In line 2, the name of the variable is	colour
+#In line 2 the name of the function is	input
+#In line 3 the name of the function is	print
+#The code above asks the user's name and favourite colour, then prints "Hello " ,  [name] , 
+#  " Your favourite colour is, " , [colour]"
+
+
+#Task 3
+
+username = input("What is your username?")
+password = input("Enter your password:")
+passwordCheck = input("Enter your password again:")
+print("Welcome, {}".format(username))
