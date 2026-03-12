@@ -24,13 +24,16 @@ A Boolean value in Python must always start with a capital letter (e.g., True in
 Answer: True
 
 
+
 By default, the input() function always saves data as a String. If I type 10 into an input box, Python sees it as "10". To fix this, I should write: 
 age = int(input("Enter age: "))  
+
 
 
 Which the value that is a Float: 
 100        "100.0"        100.0        True 
 Answer:  "100.0"
+
 
  
 Write a program that asks a user for the name of an item and its price and stores this information in 2 separate variables. 
@@ -39,26 +42,22 @@ The price must be a Float
 Calculate a 10% discount (Price multiplied by 0.9) and print: "The new price for [item] is [discounted price]", where ‘[item]’ and ‘[discounted price]’ is where you reference your variables. 
 Answer: 
 
+item = input("What item do you want:  ") 
+price = float(input("What is it's price:  ")) 
+disPrice = price * 0.9 
+print("The new price for {} is {}".format(item, disPrice))
 
 
- 
-
- 
-
- 
 
 A user wants to enter a "Member Code" which is just a single letter. 
-
 Ask the user for their Initial (Character) 
-
 Ask for their Age (Integer) 
-
 Create a Boolean variable called is_allowed. It should be True if the user is over 18. 
-
 Print: "Access Granted: [is_allowed]". 
 
- 
+Answer:
 
- 
-
-Answer: 
+char = input("Please input member code:  ")
+age = int(input("What is your age:  "))
+is_allowed = age >= 18
+print("Access Granted:", is_allowed)
