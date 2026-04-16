@@ -1,0 +1,52 @@
+#1
+code = "python"
+user= input("Enter the secret code: ")
+
+if user == code:
+    print("Access granted")
+
+#_________
+#2
+num = int(input("Enter a number: "))
+
+if num % 2 == 0:
+          print("Even number")
+
+#_________
+#3
+age = int(input("Enter your age as a whole number: ")
+
+if age >= 13:
+    print("Teenager")
+else:
+    print("Child")
+#_________
+
+#4
+password = input("Enter the password: ")
+
+if password == "admin123":
+    print("Access granted")
+else:
+    print("Access denied")
+
+#_________
+#5
+total = int(input("How much have you spent: "))
+
+if total > 100:
+    print(total * 0.9)
+else:
+    print(total)
+
+#_________
+#6
+username = input("Enter your username: ")
+
+if username == "admin":
+		print("Welcome admin")
+else:
+    print("Access limited")
+
+#_________
+#7
