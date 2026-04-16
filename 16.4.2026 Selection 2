@@ -1,0 +1,66 @@
+#1
+score = int(input("What is your score: "))
+
+if score >= 70:
+    print("A")
+elif score >= 60:
+    print("B")
+else:
+    print("C")
+    
+#_________
+#2
+user = input("Username: ")
+password = input("Password: ")
+
+if user == "admin" and password == "admin":
+    print("Access granted")
+
+#_________
+#3
+num = int(input("Enter number: "))
+
+if num >= 1 and num <= 10:
+    print("In range")
+
+#_________
+#4
+age = int(input("How old are you: "))
+
+if age < 5:
+    print("Free")
+elif age < 18:
+    print("£5")
+else:
+    print("£10")
+  
+#_________
+#5
+password = input("Enter password: ")
+
+if len(password) >= 8 and password != "password":
+    print("Strong")
+else:
+    print("Weak")
+    
+#_________
+#6
+num = int(input("Choose a number: "))
+
+if num >= 1 and num <= 10:
+    print("Small")
+elif num >= 11 and num <= 20:
+    print("Medium")
+else:
+    print("High")
+    
+#_________
+#7
+temp = int(input("What is the temperature: "))
+
+if temp >= 30:
+    print("Hot")
+elif temp >= 20:
+    print("Warm")
+else:
+    print("Cold")
