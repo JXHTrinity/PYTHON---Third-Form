@@ -1,0 +1,127 @@
+#For loop challenge1 (GCSECS.COM)
+
+#Rearrange the two lines of code below
+#to display the word "kebab" 10 times
+#HINT: There might be some indentation
+
+for i in range(10):
+  print("kebab")
+
+
+#For loop challenge2
+
+#The code below displays the answers to the...
+#2 times table. Change it to display the..
+#answers to the 3 times table
+
+for i in range(0, 37, 3):
+    print(i)
+
+
+#For loop challenge3 (GCSECS.COM)
+
+#The code below is mixed up
+#It should ask the user to enter their name.
+#It should then display the name twice
+#If possible, upgrade the code to...
+#ask the user how many times they want...
+#their name to be displayed
+
+name = str(input("Input your name>>>"))
+rep = int(input("Display number?>>>"))
+for i in range(rep):
+  print(name)
+
+
+#For loop challenge4(GCSECS.COM)
+
+#The code below is mixed up and has 1 error
+#It should ask the user to enter a times table
+#It should then display the times table
+#Also, you may need to fix indentation
+
+number = int(input("Enter a times table: "))
+for i in range(1,13):
+  print(i ,"x", number, "=", i*number)
+print("showing the",number,"times table")
+
+
+#For loop challenge6 (GCSECS.COM)
+
+#The code below is mixed up and has an error
+#It should display the 7 colours of the rainbow...
+#...in order and count them too.
+#The colours are in a 1D array (or list)
+#HINT: You may have to fix indentation too
+
+number = 0
+rainbow =["red","orange","yellow","green","blue","indigo", "violet"]
+for i in rainbow:
+  number = number + 1
+  print ("Colour",number,"is", i)
+
+
+#For loop challenge7 (GCSECS.COM)
+
+#Create some code that..
+#asks a user for an int below 100
+#displays a backwards count to zero
+
+num = int(input("Enter a number below 100>>>"))
+for i in range (num, 0, -1):
+  print(i)
+
+
+#For loop challenge8 (GCSECS.COM)
+
+#Lottery number generator
+#use import random on line 1
+#use a = random.randint(0,50) to...
+#generate a random integer between 0 and 50
+#use a for loop to generate...
+#6 random integers 
+
+import random
+for i in range(6):
+  a = random.randint(0, 50)
+  print(a)
+
+
+#For loop challenge9 (GCSECS.COM)
+
+#Monopoly with extras.
+#To make the board game monopoly more fun..
+#Create an array with amounts of money..
+#ranging from 0 to 100000
+#use import random and also use...
+#array = random.choice(money)
+#to randomly choose an amount of money
+#use a for loop to assign a...
+#random amout of money to 8 players
+
+import random
+
+money = [50, 100, 500, 1000, 5000, 10000, 50000, 100000]
+for i in range(1, 9):
+  array = random.choice(money)
+  print("Player {} gets {}".format(i, array))
+
+
+#For loop challenge10 (GCSECS.COM)
+
+#Paint and decorating houses software
+#You code must ask "how many houses are booked in?"
+#user enters e.g. 3
+#then code displays "For house 1"
+#"How many walls to be painted?"
+#user enters e.g.2
+#"What colour is it?" <-this is repeated for each wall
+#HINT: use a loop in a loop
+
+num = int(input("How many houses are booked in?"))
+for i in range(num):
+  print("For house ", num)
+  painted = int(input("How many walls to be painted?"))
+  for i in range(painted):
+    print("For wall ", i)
+    colour = input("What colour is it?")
